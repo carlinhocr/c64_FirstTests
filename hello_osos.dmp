@@ -13,11 +13,10 @@
 00013  0907  60                    RTS
 00014  0908             
 00015  0908             HELLOWORLD 
-00016  0908  48 4F 4C              TEXT "HOLA OSI!, "
-00017  0913  0D                    BYTE 13 ; ADD A CARRIEGE RETURN
-00018  0914  43 4F 4D              TEXT "COMO ESTAN?"
-00019  091F                        
-00020  091F             
+00016  0908  48 4F 4C              TEXT "HOLA OSI!, HOLAAAAAAAAA "
+00017  0920  0D                    BYTE 13 ; ADD A CARRIEGE RETURN
+00018  0921  43 4F 4D              TEXT "COMO ESTAN?"
+00019  092C             
 
 ******* 1 Label(s) *******
 HELLOWORLD = $0908 

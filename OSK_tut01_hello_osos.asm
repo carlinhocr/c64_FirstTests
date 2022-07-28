@@ -13,7 +13,6 @@ PRINT_LINE = $AB1E
         rts
 
 HELLOWORLD
-        text "hola osi!, "
+        text "hola osi!, holaaaaaaaaa "
         byte 13 ; add a carriege return
         text "como estan?"
-        

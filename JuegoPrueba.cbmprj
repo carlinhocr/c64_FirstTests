@@ -14,7 +14,7 @@
     <d64Name />
     <Comments />
     <Author>Carlos Rienzi</Author>
-    <Email />
+    <Email>carlos.rienzi@gmail.com</Email>
     <AutoLaunchName>juegoprueba.prg</AutoLaunchName>
     <NoSingleFileBuild>False</NoSingleFileBuild>
     <CreatedWithVersion>CBM prg Studio 3.14.0</CreatedWithVersion>
@@ -41,7 +41,7 @@
         <PostBuildCommands />
     </BuildEvents>
     <BuildList>
-        <FileName>hello_osos.asm</FileName>
+        <FileName>OSK_tut01_hello_osos.asm</FileName>
     </BuildList>
     <DetermineBuildOrder>0</DetermineBuildOrder>
     <PaddingByte>0</PaddingByte>
@@ -51,7 +51,7 @@
     <!--End of screen designer settings-->
     <SourceFiles>
         <SourceFile>
-            <Name>hello_osos.asm</Name>
+            <Name>OSK_tut01_hello_osos.asm</Name>
             <PrgName />
             <FileType>2</FileType>
             <IncludeInBuild>True</IncludeInBuild>
@@ -62,7 +62,7 @@
             <FileOpen>True</FileOpen>
         </SourceFile>
         <SourceFile>
-            <Name>hello_world.bas</Name>
+            <Name>OSK_tut01_hello_world.bas</Name>
             <PrgName />
             <FileType>1</FileType>
             <IncludeInBuild>True</IncludeInBuild>
