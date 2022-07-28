@@ -1,4 +1,4 @@
-##{0:0:0:OSKTUS01_hello_osos.prg}\\Mac\Home\Documents\Programming\Commodore64\JuegoPrueba\OSKTUS01_hello_osos.asm
+##{0:0:0:OSKTUT02_Labels.prg}\\Mac\Home\Documents\Programming\Commodore64\JuegoPrueba\OSKTUT02_Labels.asm
 
 ; 10 SYS (2304)
 
@@ -7,15 +7,32 @@
         BYTE    $0E, $08, $0A, $00, $9E, $20, $28, $32 
         BYTE    $33, $30, $34, $29, $00, $00, $00
 
-PRINT_LINE = $AB1E
 *=$0900
-        lda #<HELLOWORLD
-        ldy #>HELLOWORLD
-        jsr PRINT_LINE
-        rts
 
-HELLOWORLD
-        text "hola osi!, holaaaaaaaaa "
-        byte 13 ; add a carriege return
-        text "como estan?, bien?"
+SCREEN_Start_Location = $0400
+SCREEN_Start_Location2 = $0518
+
+VAR_BINARY = %01010101
+VAR_HEX = $2A
+VAR_OCTAL = @35
+VAR_DECIMAL = 1234
+
+Start
+        ldy #0 ; load y record
+@Looper
+        tya ; transfer y record to accumulator
+        sta SCREEN_Start_Location,y ; store accumulator
+        iny ; increment y register
+        bne @Looper ; branch on result non zero
+        ;rts ; return from subprogram
+
+SecondDrawingReverse
+        ldy #0 ; load y record
+@Looper2
+        tya ; transfer y record to accumulator
+        sta SCREEN_Start_Location2,y ; store accumulator
+        iny ; decrement y register
+        bne @Looper2 ; branch on result non zero
+        rts ; return from subprogram
+
 

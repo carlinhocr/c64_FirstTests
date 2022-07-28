@@ -41,7 +41,8 @@
         <PostBuildCommands />
     </BuildEvents>
     <BuildList>
-        <FileName>OSKTUS01_hello_osos.asm</FileName>
+        <FileName>OSKTUT01_hello_osos.asm</FileName>
+        <FileName>OSKTUT02_Labels.asm</FileName>
     </BuildList>
     <DetermineBuildOrder>0</DetermineBuildOrder>
     <PaddingByte>0</PaddingByte>
@@ -51,20 +52,31 @@
     <!--End of screen designer settings-->
     <SourceFiles>
         <SourceFile>
-            <Name>OSKTUS01_hello_osos.asm</Name>
+            <Name>OSKTUT01_hello_osos.asm</Name>
             <PrgName />
             <FileType>2</FileType>
             <IncludeInBuild>True</IncludeInBuild>
             <Regions />
             <Breakpoints />
             <Bookmarks />
-            <Topmost>True</Topmost>
+            <Topmost>False</Topmost>
             <FileOpen>True</FileOpen>
         </SourceFile>
         <SourceFile>
             <Name>OSKTUT01_hello_world.bas</Name>
             <PrgName />
             <FileType>1</FileType>
+            <IncludeInBuild>True</IncludeInBuild>
+            <Regions />
+            <Breakpoints />
+            <Bookmarks />
+            <Topmost>False</Topmost>
+            <FileOpen>False</FileOpen>
+        </SourceFile>
+        <SourceFile>
+            <Name>OSKTUT02_Labels.asm</Name>
+            <PrgName />
+            <FileType>2</FileType>
             <IncludeInBuild>True</IncludeInBuild>
             <Regions />
             <Breakpoints />
