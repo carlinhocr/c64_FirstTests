@@ -15,4 +15,4 @@ PRINT_LINE = $AB1E
 HELLOWORLD
         text "hola osi!, holaaaaaaaaa "
         byte 13 ; add a carriege return
-        text "como estan?"
+        text "como estan?, bien?"

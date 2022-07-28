@@ -1,4 +1,4 @@
-##{0:0:0:hello_osos.prg}\\Mac\Home\Documents\Programming\Commodore64\JuegoPrueba\hello_osos.asm
+##{0:0:0:OSKTUS01_hello_osos.prg}\\Mac\Home\Documents\Programming\Commodore64\JuegoPrueba\OSKTUS01_hello_osos.asm
 
 ; 10 SYS (2304)
 
@@ -17,5 +17,5 @@ PRINT_LINE = $AB1E
 HELLOWORLD
         text "hola osi!, holaaaaaaaaa "
         byte 13 ; add a carriege return
-        text "como estan?"
+        text "como estan?, bien?"
 
