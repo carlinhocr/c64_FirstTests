@@ -16,30 +16,25 @@ VAR_HEX = $2A
 VAR_OCTAL = @35
 VAR_DECIMAL = 1234
         jsr CLEAR_SCREEN ; execute the basic clear screen function
-Start  
-        jsr StraightDrawing
-        jsr SecondDrawingReverse
-
-
-StraightDrawing
+Start
+        
         ldy #0 ; load y record
 @Looper
         tya ; transfer y record to accumulator
         sta SCREEN_Start_Location,y ; store accumulator
         iny ; increment y register
         bne @Looper ; branch on result non zero
-        rts
         
 
 SecondDrawingReverse
         ldy #0 ; load y record for position
         ldx #255 ;load x record with decimal number 255
-@Looper ;only valid for the local subroutine
+@Looper2
         txa ; transfer x record to accumulator
         sta SCREEN_Start_Location2,y ; store accumulator
         iny ; increment y register
         dex ; decrement x record to change the character
-        bne @Looper ; branch on result non zero
+        bne @Looper2 ; branch on result non zero
 ;Extra excution for the case where y equal zero that does not the @
         txa ; transfer y record to accumulator
         sta SCREEN_Start_Location2,y ; store accumulator
